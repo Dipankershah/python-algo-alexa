@@ -1,0 +1,10 @@
+{
+  "askcliResourcesVersion": "2020-03-31",
+  "profiles": {
+    "Black-Dev": {
+      "skillMetadata": {
+        "src": "./skill-package"
+      }
+    }
+  }
+}

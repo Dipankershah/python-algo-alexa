@@ -1,0 +1,124 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Wildcard",
+          "uri": "https://webhookv4.jovo.cloud/a82478ab-7e02-4b68-8859-d677a606d3ba"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "automaticClonedLocale": {
+        "locales": [
+          {
+            "source": "en-IN"
+          }
+        ]
+      },
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-CA": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [],
+          "name": "Python Algo",
+          "summary": "Sample Short Description"
+        },
+        "en-US": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [
+            "hello",
+            "world"
+          ],
+          "name": "python-algo-to-alexa",
+          "summary": "Sample Short Description",
+          "smallIconUri": "https://via.placeholder.com/108/09f/09f.png",
+          "largeIconUri": "https://via.placeholder.com/512/09f/09f.png"
+        },
+        "en-IN": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [
+            "hello",
+            "world"
+          ],
+          "name": "python-algo-to-alexa",
+          "summary": "Sample Short Description",
+          "smallIconUri": "https://via.placeholder.com/108/09f/09f.png",
+          "largeIconUri": "https://via.placeholder.com/512/09f/09f.png"
+        },
+        "en-AU": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [
+            "hello",
+            "world"
+          ],
+          "name": "python-algo-to-alexa",
+          "summary": "Sample Short Description",
+          "smallIconUri": "https://via.placeholder.com/108/09f/09f.png",
+          "largeIconUri": "https://via.placeholder.com/512/09f/09f.png"
+        },
+        "en-GB": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [
+            "hello",
+            "world"
+          ],
+          "name": "python-algo-to-alexa",
+          "summary": "Sample Short Description",
+          "smallIconUri": "https://via.placeholder.com/108/09f/09f.png",
+          "largeIconUri": "https://via.placeholder.com/512/09f/09f.png"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    },
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "http://example.com/policy",
+          "termsOfUseUrl": ""
+        },
+        "en-GB": {
+          "privacyPolicyUrl": "http://example.com/policy",
+          "termsOfUseUrl": ""
+        },
+        "en-AU": {
+          "privacyPolicyUrl": "http://example.com/policy",
+          "termsOfUseUrl": ""
+        },
+        "en-IN": {
+          "privacyPolicyUrl": "http://example.com/policy",
+          "termsOfUseUrl": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "invocation": "python algo",
+  "version": "4.0",
+  "intents": {
+    "YesIntent": {
+      "phrases": [
+        "yes",
+        "yes please",
+        "sure"
+      ]
+    },
+    "NoIntent": {
+      "phrases": [
+        "no",
+        "no thanks"
+      ]
+    },
+    "PreviousIntent": {
+      "phrases": [
+        "go back",
+        "Previous"
+      ]
+    },
+    "NextIntent": {
+      "phrases": [
+        "next",
+        "next please"
+      ]
+    }
+  },
+  "alexa": {
+    "interactionModel": {
+      "languageModel": {
+        "invocationName": "python algo",
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "HelloWorldIntent",
+            "slots": [],
+            "samples": [
+              "hello",
+              "how are you",
+              "say hi world",
+              "say hi",
+              "hi",
+              "say hello world",
+              "say hello"
+            ]
+          },
+          {
+            "name": "AMAZON.NavigateHomeIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.FallbackIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.YesIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.NoIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.NextIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.PreviousIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StartOverIntent",
+            "samples": []
+          },
+          {
+            "name": "GoToStep",
+            "slots": [
+              {
+                "name": "number",
+                "type": "AMAZON.NUMBER"
+              }
+            ],
+            "samples": [
+              "step {number}",
+              "start {number}",
+              "go to step {number}"
+            ]
+          }
+        ],
+        "types": []
+      },
+      "dialog": {
+        "intents": [
+          {
+            "name": "GoToStep",
+            "confirmationRequired": false,
+            "prompts": {},
+            "slots": [
+              {
+                "name": "number",
+                "type": "AMAZON.NUMBER",
+                "elicitationRequired": false,
+                "confirmationRequired": false,
+                "prompts": {},
+                "validations": [
+                  {
+                    "type": "isInSet",
+                    "prompt": "Slot.Validation.268203279026.132755213292.1003562893469",
+                    "values": [
+                      "1",
+                      "2",
+                      "3"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "delegationStrategy": "ALWAYS"
+      },
+      "prompts": [
+        {
+          "id": "Slot.Validation.268203279026.132755213292.1003562893469",
+          "variations": [
+            {
+              "type": "PlainText",
+              "value": "We only have three steps. So please try to say step one, two or three?"
+            }
+          ]
+        }
+      ]
+    },
+    "version": "4"
+  }
+}
