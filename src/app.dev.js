@@ -14,24 +14,10 @@ import { DynamoDb } from '@jovotech/db-dynamodb';
 */
 app.configure({
   plugins: [
-    // new FileDb({
-    //   pathToFile: '../db/db.json',
-    // }),
-    new JovoDebugger(),
-    new DynamoDb({
-      table: {
-        name: 'MyDynamoDbTable-Paython-Algo',
-      },
-      libraryConfig: {
-        dynamoDbClient: {
-          region: 'us-east-1',
-          credentials: {
-            accessKeyId: 'AKIAZS3VGLD5VN7GFUPR',
-            secretAccessKey: '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',
-          },
-        },
-      }
+    new FileDb({
+      pathToFile: '../db/db.json',
     }),
+    new JovoDebugger()
   ],
 });
 

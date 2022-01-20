@@ -4,6 +4,7 @@ import { GlobalComponent } from './components/GlobalComponent';
 import { YesNoFirstComponent } from './components/YesNoFirstComponent';
 import { YesNoCheckerComponent } from './components/YesNoCheckerComponent';
 import { DynamoDb } from '@jovotech/db-dynamodb';
+import { FileDb } from '@jovotech/db-filedb';
 
 /*
 |--------------------------------------------------------------------------
@@ -47,19 +48,8 @@ const app = new App({
         'AMAZON.StartOverIntent':'StartOverIntent'
       }
     }),
-    new DynamoDb({
-      table: {
-        name: 'MyDynamoDbTable-Paython-Algo',
-      },
-      libraryConfig: {
-        dynamoDbClient: {
-          region: 'us-east-1',
-          credentials: {
-            accessKeyId: 'AKIAZS3VGLD5VN7GFUPR',
-            secretAccessKey: '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',
-          },
-        },
-      }
+    new FileDb({
+      pathToFile: '../db/db.json',
     }),
   ],
 
